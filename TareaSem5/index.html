@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delvicier</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-assets>
+            <img src="assets/decierto.jpg" id="playita">
+            <img src="assets/earth.jpg" id="planeta">
+            <img src="assets/futbol.jpg" id="balon">
+        </a-assets>
+
+        <a-sky src="#playita"></a-sky>
+
+        <a-text value="Christopher Delvicier" color="white" position="-1.5 3.5 -3" width="7"></a-text>
+
+        <a-text value="Tarea Semana 5" color="white" position="-1.2 0 -3" width="7"></a-text>
+
+        <a-entity geometry="primitive: sphere;" radius="2" position="0 1.6 -3" material="shader:flat; src:#planeta"animation="property: rotation; dur: 9000; to: 0 360 ; esaing: linear; loop: true"></a-entity>
+
+
+        <a-entity position="0 -3 0" rotation="0 0 -360" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000;">
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="0 0 -30"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="0 0 30"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="30 0 0"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="-30 0 0"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="20 0 20"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="-20 0 -20"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="-20 0 20"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="20 0 -20"></a-entity>
+
+        </a-entity>
+
+
+    </a-scene>
+
+</body>
+
+</html>
