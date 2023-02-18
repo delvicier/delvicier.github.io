@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delvicier</title>
+    <title>Crear escena con A-Frame | Aframe</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="./app.js"></script>
 </head>
 
 <body>
@@ -18,34 +17,52 @@
             <img src="assets/decierto.jpg" id="playita">
             <img src="assets/earth.jpg" id="planeta">
             <img src="assets/futbol.jpg" id="balon">
+
+            <img src="assets/fondo.jpg" id="fondo">
+
+            <img src="assets/planeta1.jpg" id="planeta1">
+            <img src="assets/planeta2.jpg" id="planeta2">
+            <img src="assets/planeta3.jpg" id="planeta3">
+            <img src="assets/planeta4.jpg" id="planeta4">
+
         </a-assets>
 
         <a-sky src="#playita"></a-sky>
 
         <a-text value="Christopher Delvicier" color="white" position="-1.5 3.5 -3" width="7"></a-text>
 
-        <a-text value="Tarea Semana 5" color="white" position="-1.2 0 -3" width="7"></a-text>
+        <a-text value="Tarea Semana 6" color="white" position="-1.2 0 -3" width="7"></a-text>
 
         <a-entity geometry="primitive: sphere;" radius="2" position="0 1.6 -3" material="shader:flat; src:#planeta"animation="property: rotation; dur: 9000; to: 0 360 ; esaing: linear; loop: true"></a-entity>
 
 
-        <a-entity position="0 -3 0" rotation="0 0 -360" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000;">
+        <a-entity geometry="primitive: plane; height: 18; width: 30" position="0.2 2 -20" width="1" material="shader:flat;src:#fondo"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="0 0 -30"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="0 0 30"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="30 0 0"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="-30 0 0"></a-entity>
+        <a-entity geometry="primitive: ring; radiusInner: 1.3; radiusOuter: 1.27" position="0 1.5 -2.5" material="side: double" rotation="87 45 0" animation="property: rotation; to: 360 360 360; loop: true; dur: 9000;"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="20 0 20"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="-20 0 -20"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="-20 0 20"></a-entity>
 
-            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat;src:#balon" position="20 0 -20"></a-entity>
+        <a-entity position="-1.2 0 8" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 9000;">
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta1" position="0 0 -30"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta2" position="0 0 30"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta3" position="30 0 0"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta4" position="-30 0 0"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta1" position="20 0 20"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta2" position="-20 0 -20"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta3" position="-20 0 20"></a-entity>
+
+            <a-entity geometry="primitive:sphere; radius:2" material="shader:flat; src:#planeta4" position="20 0 -20"></a-entity>
 
         </a-entity>
 
