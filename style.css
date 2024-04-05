@@ -4,14 +4,35 @@
   margin:2px;
 }
 
+:root {
+  --titulo-color: #fff;
+  --parrafo-color: #222;
+  --bg1-color: #222;
+  --bg2-color: #0a0a0a;
+  --bg3-color: #fbf3ca;
+  --shadow1-color: rgb(255, 245, 132);
+  --shadow2-color: rgb(255, 245, 149);
+  --border-color: #ecc15b;
+  --border1-color: rgb(255, 245, 132);
+  --border2-color: #f8ce6b;
+}
+
 
 
 
 /* FONDO */
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: auto;
-  background-color: #181818;
+  background-image: url(./img//fondos/a4.jpg);
+  background-size: cover;
 }
 
 .contenedor{
@@ -33,9 +54,12 @@ header{
   height: 195px;
 }
 
+
+
+
 .pantalla{
-  box-shadow: 0 0 10px rgb(255, 245, 132);
-  border: rgb(255, 245, 132) 2px solid;
+  box-shadow: 0 0 10px var(--shadow1-color);
+  border: var(--border1-color) 2px solid;
   background-image: url('./img/Fondo3.jpg');
   width: 424px; 
   height: 180px; 
@@ -58,12 +82,12 @@ header{
 
 #dinero {
   font-size: 4.2em;
-  color: #fff;
+  color: var(--titulo-color);
 }
 
 #euro{
   font-size: 1.4em;
-  color: #fff;
+  color: var(--titulo-color);
 }
 
 #monedas img{
@@ -121,7 +145,7 @@ header{
   width: 30px;
   height: 280px;
   background-image: linear-gradient(to right, #fff6bf, #fceead, #f9e69c, #f7de8a, #f5d679, #f1cc6c, #edc35f, #e9b952, #e1ac47, #da9e3c, #d29132, #ca8428);
-  box-shadow: 0 0 13px rgb(255, 245, 132) inset;
+  box-shadow: 0 0 13px var(--shadow2-color)inset;
   position: absolute;
   border-radius: 50px;
   right: 70px; 
@@ -138,7 +162,7 @@ header{
   position: absolute;
   right: 11px;
   bottom: 38px;
-  color: #fff;
+  color: var(--titulo-color);
 }
 
 
@@ -149,7 +173,7 @@ header{
 #content_ventanas{ 
   width: 600px;
   background-image: linear-gradient(to top, #ffe681, #ffe17e, #ffdc7b, #ffd778, #ffd276, #faca6f, #f6c268, #f1ba61, #e7ad53, #dda046, #d39339, #c9862b);
-  box-shadow: 0 0 13px rgb(255, 246, 149) inset;
+  box-shadow: 0 0 13px var(--shadow1-color)inset;
   border-radius: 41%;
   margin: auto;
   margin-top: 10px;
@@ -209,9 +233,9 @@ header{
 .boton{
   width: 170px;
   height: 40px;
-  border: 4px solid rgb(255, 245, 132);
-  background-color: #fbf3ca;
-  color: #343434;
+  border: 4px solid var(--border1-color);
+  background-color: var(--bg3-color);
+  color: var(--parrafo-color);
   align-content: center;
   text-align: center; 
   font-size: 1.4em;
@@ -222,26 +246,26 @@ header{
 
 .d{
   border-radius: 50px 0 0 50px;
-  border: 4px solid #ecc15b;
+  border: 4px solid var(--border-color);;
 }
 
 .e{
   border-radius: 5px;
-  border: 4px solid #ecc15b;
+  border: 4px solid var(--border-color);;
 }
 
 .f{
   border-radius: 0 50px 50px 0;
-  border: 4px solid #ecc15b;
+  border: 4px solid var(--border-color);;
 }
 
 #tirar:hover{
-  background-color: #ecc15b;
+  background-color: var(--border-color);;
 }
 
 .boton:hover {
-  background-color: #f8ce6b;
-  color: white;
+  background-color: var(--border2-color);
+  color: var(--titulo-color);
 }
 
 
@@ -256,7 +280,7 @@ header{
   background-color: rgba(0, 0, 0, 0.604);
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--titulo-color);
   display: none;
   height: 100%;
   width: 100%;
@@ -264,9 +288,9 @@ header{
 }
 
 #ventanaMsj{
-  background-color: #0a0a0a;
-  box-shadow: 0 0 8px rgb(255, 246, 149);
-  border: 4px solid rgb(255, 245, 132); 
+  background-color: var(--bg2-color);
+  box-shadow: 0 0 8px var(--shadow2-color);
+  border: 4px solid var(--shadow1-color); 
   width: 400px; 
   border-radius: 12px;
   position: relative;
@@ -275,7 +299,7 @@ header{
 
 #mensaje{
   font-size: 1.5em;
-  color: #fff;
+  color: var(--titulo-color);
   text-align: center;
   margin: 10px;
   margin-top: 16px;
@@ -304,9 +328,9 @@ header{
 }
 
 .restart{
-  border: 3px solid #ecc15b;
-  background-color: #fbf3ca; 
-  color: #000000;
+  border: 3px solid var(--border-color);
+  background-color: var(--bg3-color); 
+  color: var(--parrafo-color);
   border-radius: 25px;
   padding: 5px 7px;
   margin: 8px auto;
@@ -334,7 +358,7 @@ header{
 
 /*------ Settings ------*/
 .containerx {
-  color: #ffffff;
+  color: var(--titulo-color);
   --color: #ffffff;
   --size: 30px;
   display: flex;
@@ -344,7 +368,7 @@ header{
   cursor: pointer;
   font-size: var(--size);
   user-select: none;
-  fill: var(--color);
+  fill: var(--titulo-color);
 }
 
 .containerx .pause {
@@ -386,18 +410,4 @@ header{
   50% {
     transform: rotate(-10deg) scale(1.2);
   }
-}
-
-
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  background-image: url(./a1.jpg);
-  background-size: contain;
 }

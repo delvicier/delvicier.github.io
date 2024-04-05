@@ -180,15 +180,20 @@ function musica (audio) {
 }
 
 function recargarPagina() {
-  location.reload();
+  creditos = (Math.floor(Math.random()*4)+9);
+  dinero.innerHTML=creditos;
+  monedas.innerHTML=``
+  for(let i= 1; i <= creditos; i++){
+    monedas.innerHTML+=`<img src="./img/moneda2.png">`;}
+    cerrar();
 }
 
 const backgroundMusic = document.querySelector("#music");
 const play = document.querySelector(".play");
 play.addEventListener("change", playAudio);
 
-backgroundMusic.volume = 0.3;
-sonido.volume = 0.5;
+backgroundMusic.volume = 0.4;
+sonido.volume = 0.6;
 
 function playAudio() {
   if (backgroundMusic.paused) {
