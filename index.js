@@ -41,12 +41,12 @@ function animationGirar() {
   const styleElement = document.createElement('style');
   styleElement.textContent = `
     .imgx {
-      animation: girarInfinito 0.5s linear infinite;
+      animation: girarInfinito 0.4s linear infinite;
     }
     @keyframes girarInfinito {
-      0% { transform: translateY(-54%); opacity: 1; }
-      50% { transform: translateY(0); opacity: 1; }
-      100% { transform: translateY(54%); opacity: 1; }
+      0% { transform: translateY(-55%); opacity: 0; }
+      50% { transform: translateY(0%); opacity: 1; }
+      100% { transform: translateY(55%); opacity: 0; }
     }
   `;
   document.head.appendChild(styleElement);

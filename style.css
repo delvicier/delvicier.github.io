@@ -175,8 +175,8 @@ header{
   background-image: linear-gradient(to top, #ffe681, #ffe17e, #ffdc7b, #ffd778, #ffd276, #faca6f, #f6c268, #f1ba61, #e7ad53, #dda046, #d39339, #c9862b);
   box-shadow: 0 0 13px var(--shadow1-color)inset;
   border-radius: 41%;
-  margin: auto;
   margin-top: 10px;
+  margin: auto;
 }
 
 #ventanas{ 
@@ -184,10 +184,11 @@ header{
   height: 222px;
   display: flex;
   background-image: linear-gradient(to top, #fff4ad, #ffeb91, #f9e69c, #f7de8a, #ffe492, #ffe59e, #ffdf8e, #ffe098, #eec05a, #ebbc56, #e9b753, #e6b350);
-  border-radius: 100px;
   padding: 10px 24px 0px 17px;
-  margin: auto;
   justify-content: center;
+  border-radius: 100px;
+  margin: auto;
+  
 }
 
 .ventana{
@@ -195,6 +196,7 @@ header{
 }
 
 .imagen{
+  display: flex;
   width: 170px;
   height: 200px;
   border:4px solid var(--border3-color);
@@ -204,6 +206,14 @@ header{
   text-align: center;
   margin: auto;
   overflow: hidden;
+  
+}
+
+.imgx{
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
 }
 
 /*
@@ -231,12 +241,14 @@ header{
 }
 
 .boton{
+  display: flex;
   width: 170px;
   height: 40px;
   border: 4px solid var(--border1-color);
   background-color: var(--bg3-color);
   color: var(--parrafo-color);
-  align-content: center;
+  justify-content: center;
+  align-items: center; 
   text-align: center; 
   font-size: 1.4em;
   user-select: none; 
