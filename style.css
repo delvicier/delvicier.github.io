@@ -20,7 +20,6 @@
 }
 
 
-
 /* FONDO */
 
 html,
@@ -410,5 +409,13 @@ header{
 
   50% {
     transform: rotate(-10deg) scale(1.2);
+  }
+}
+
+
+@media (min-width: 720px) {
+  body {
+    height: 100vh;
+    overflow: auto;
   }
 }
