@@ -1,103 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en" data-critters-container>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Delvicier</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="index.js"></script>
-</head>
+  <meta charset="utf-8">
+  <title>Urb EP</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }:root{color-scheme:none}*{margin:0;padding:0}body{background-image:url("./media/f3-SA7BWMM7.jpg");background-attachment:fixed;background-size:cover}:root{--titulo-color: #fff;--parrafo-color: #222;--bg1-color: #222;--bg2-color: #0a0a0a;--bg3-color: #fbf3ca;--bg4-color: #ffffff86;--shadow1-color: rgb(255, 245, 132);--shadow2-color: rgb(255, 245, 149);--border-color: #ecc15b;--border1-color: rgb(255, 245, 132);--border2-color: #f8ce6b;--border3-color: #fedc8b}
+</style><link rel="stylesheet" href="styles-SR246EOW.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-SR246EOW.css"></noscript></head>
 <body>
-
-
-  <div class="contenedor">
-
-    <header>
-
-      <div id="palanca">
-        <div id="palo">.</div>
-        <button id="tirar">.</button>
-      </div>
-
-      <div class="pantalla">
-
-        <div id="lineal">
-          <div class="" id="credito">Crédito:</div>
-          <div class="" id="dinero">0</div>
-          <div class="" id="euro">$</div>
-        </div>
-        
-        <div id="monedas">
-        </div>
-
-        <label class="clic" for="tirar"></label>
-        
-      </div>
-    </header>
-    
-    <br>
-
-    <section id="content_ventanas">
-      <div id="ventanas">
-
-        <div class="ventana">
-          <div class="imagen a">
-            <img class="imgx" src="./img/A1.gif" alt="moneda" width="150px">
-          </div>
-          <div class="boton d">
-            Tirar
-          </div>
-        </div>
-
-        <div class="ventana">
-          <div class="imagen b">
-            <img class="imgx" src="./img/A6.gif" alt="moneda" width="150px">
-          </div>
-          <div class="boton e">
-            Tirar
-          </div>
-        </div>
-
-        <div class="ventana">
-          <div class="imagen c">
-            <img class="imgx" src="./img/A2.gif" alt="moneda" width="150px">
-          </div>
-          <div class="boton f">
-            Tirar
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </div>
-
-  <div id="velo">
-    <div id="ventanaMsj">
-      <img id="cruz" src="./img/x2.png" alt="x" width="32px">
-      <div id="mensaje">
-        <p>Cualquier texto</p>
-        <img src="./img/moneda.png" alt="moneda" width="48px">
-        <img src="./img/moneda.png" alt="moneda" width="48px">
-        <img src="./img/moneda.png" alt="moneda" width="48px">
-      </div>
-    </div>
-  </div>
-
-  <audio id="sonido" src=""></audio>
-
-  <audio id="music" src="./music/music_fondo.mp3"></audio>
-  <br><br><br>
-  
-  <div class="play"> 
-    <label class="containerx">
-      <input checked="checked" type="checkbox">
-        <p>Play </p>
-        <p>Music</p>
-        <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="play"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg>
-        <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="pause"><path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path></svg>
-    </label>
-  </div>
-
-</body>
+  <app-root></app-root>
+<script src="polyfills-S3BTP7ME.js" type="module"></script><script src="main-O74AYFZW.js" type="module"></script></body>
 </html>
